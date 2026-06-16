@@ -1,0 +1,45 @@
+# This is the root of the project
+
+root = true
+
+# For all file types
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Specific to each file type
+
+[*.{c,h,cpp,hpp,cc,cxx}]
+indent_size = 4
+
+[*.cs]
+indent_size = 4
+
+[*.rs]
+indent_size = 4
+
+[*.java]
+indent_size = 4
+
+[*.py]
+indent_size = 4
+
+[*.vb]
+indent_size = 4
+
+[*.md]
+# force soft tab whatever default style specifies
+indent_style = space
+# force 2 spaces for tab whatever default style specifies
+indent_size = 2
+trim_trailing_whitespace = false
+
+[*.bat]
+end_of_line = crlf
+[*.cmd]
+end_of_line = crlf
